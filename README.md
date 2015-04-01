@@ -19,29 +19,29 @@ To run tests:
   cd FedoraGenericSearch
   
   basic operations on the lucene plugin:
-  
+  ```
     ant junit-lucene
-  
+  ```
   sortFields and updateIndex operations on the lucene plugin:
-  
+  ```
     ant junit-testsonlucene
-    
+  ```
   sort result filtering operations on the lucene plugin:
-  
+  ```
     see FedoraGenericSearch/src/test/junit/gsearch/test/searchresultfiltering/TestSearchResultFiltering.java
   
     ant junit-searchresultfiltering
-    
+  ```
   basic operations on the solr plugin:
-  
+  ```
     startup the solr server:
       cd $FEDORA_HOME/gsearch/DemoOnSolr/example
       java -jar start.jar
       
     ant junit-solr
-    
+  ```
   basic operations on the zebra plugin:
-  
+  ```
     install, configure and startup the zebra server:
     
       see $FEDORA_HOME/tomcat/webapps/fedoragsearch/WEB-INF/classes/configDemoOnZebra/index/DemoOnZebra/zebraconfig/README
@@ -51,11 +51,13 @@ To run tests:
   all tests:
   
     ant junit-all
-
+  ```
 To clean up all build-generated files:
 
+  ```
   cd FedoraGenericSearch
   ant clean
+  ```
 
 For more information, see the following web page:
 
